@@ -171,7 +171,6 @@ btnNuevo.addEventListener('click', ()=>{
     divCartasJugador.innerHTML="";
 
 
-
 })
 
 
