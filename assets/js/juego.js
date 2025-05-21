@@ -104,8 +104,21 @@ const turnoComputadora= (puntosMinimos)=>{
         break;
     }
 
+    }while((puntosComputadora<puntosMinimos)&& (puntosMinimos<=21));
 
-    }while((puntosComputadora<puntosMinimos)&& (puntosMinimos<=21))
+
+    setTimeout(()=>{
+        if (puntosComputadora===puntosJugador){
+        alert("EMPATE");
+    }else if(puntosMinimos>21){
+        alert("GANA COMPUTADORA")
+    }else if (puntosComputadora>21){
+        alert("JUGADOR GANA")
+    }else{
+        alert("GANA COMPUTADORA")
+    }
+    },150);
+    
 }
 
 
@@ -140,6 +153,25 @@ btnParar.addEventListener('click', ()=>{
     btnParar.disabled=true;
     btnPedir.disabled=true;
     turnoComputadora(puntosJugador);
+
+    
+})
+
+btnNuevo.addEventListener('click', ()=>{
+    console.clear();
+    deck= [];
+    puntosJugador= 0;
+    puntosComputadora=0;
+    crearDeck();
+    btnParar.disabled=false;
+    btnPedir.disabled=false;
+    puntosHtml[0].innerHTML=puntosJugador;
+    puntosHtml[1].innerHTML=puntosJugador;
+    divCartasComputadora.innerHTML="";
+    divCartasJugador.innerHTML="";
+
+
+
 })
 
 
