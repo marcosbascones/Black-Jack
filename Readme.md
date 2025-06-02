@@ -3,6 +3,10 @@
 
 Este proyecto es una implementación simple del clásico juego de cartas **BlackJack**.
 
+Aplicación desplegada en Netlify:
+
+https://app-blackjack-portfolio.netlify.app/
+
 
 ### 🔁 Lógica básica de programación
 - Uso de **variables**, **condicionales** (`if`, `else`, ternarios) y **bucles** (`for`, `do-while`).
